@@ -1,0 +1,53 @@
+.box {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  border: 50px solid lightgray;
+  border-bottom: none;
+  position: relative;
+}
+
+#triangle-bottomleft {
+  border-bottom: 300px solid darkgray;
+  border-right: 300px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  min-width: 300px;
+}
+
+#textbox-opposite-side {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -30%);
+  border: 2px solid;
+  width: 100px;
+}
+
+#textbox-adjacent-side {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  border: 2px solid;
+  width: 100px;
+}
+
+.result {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -70%);
+  width: 100px;
+  font-weight: bold;
+  color: #1b911b;
+  font-size: 25px;
+}

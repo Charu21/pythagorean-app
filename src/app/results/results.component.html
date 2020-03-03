@@ -1,0 +1,16 @@
+<div class="box">
+    <div class="form-group" id="textbox-opposite-side">
+        <input type="number" id="opposite-side" name="opposite-side" class="form-control" [(ngModel)]="oppositeside">
+    </div>
+    <div class="form-group" id="textbox-adjacent-side">
+        <input type="number" id="adjacent-side" name="adjacent-side" class="form-control" [(ngModel)]="adjacentside">
+    </div>
+    <div id="triangle-bottomleft"></div>
+    <div class="buttons">
+        <button class="btn btn-primary btn-lg btn-block" (click)="calculateHypotenuse()">Calculate</button>
+        <button class="btn btn-danger btn-lg btn-block" (click)="reset()">Reset</button>
+    </div>
+    <div *ngIf="calculateClicked">
+        <label for="result" class="result"> {{ hypotenuse }}</label>
+    </div>
+</div>
